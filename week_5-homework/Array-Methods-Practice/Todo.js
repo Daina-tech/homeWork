@@ -311,5 +311,6 @@ const data = [
 // },
 
 const user3Todo = data.filter(todo => todo.userId === 3);
-
-const user3TodoIncompleted = data.filter(todo => !todo.completed === true);
+console.log(user3Todo);
+const user3TodoIncompleted = user3Todo.filter(todo => todo.completed === false);
+console.log(user3TodoIncompleted);

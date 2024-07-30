@@ -364,8 +364,8 @@ const data = [
 // },
 
 const user5Post = data.filter(post => post.userId === 5);
+console.log(user5Post);
 
-let content = data.map(post => {
-  return `${post.title}
-    ${post.body}`;
-});
+const bodyPairs = [];
+user5Post.filter(user => bodyPairs.push([user.title, user.body]));
+console.log(bodyPairs);
